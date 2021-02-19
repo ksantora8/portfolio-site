@@ -207,7 +207,6 @@ button:focus,
   padding-bottom: 5px;
   left: 0;
   right: 0;
-  position: absolute;
   border-top: 5px solid #fcbdc7;
 /*   z-index: 1; */
   -webkit-animation: bounce 1.5s infinite;
