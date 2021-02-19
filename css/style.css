@@ -7,11 +7,11 @@
   --pink: #fcbdc7;
   --lighter pink: #f9e0e4;
   --gold: #e8c17e;
-  --green: #7cb842;
+  --green: #7cb842;*/
 :root {
   --font-weight-700: 700;
   --font-weight-400: 400;
-}*/
+}
 * {
   box-sizing: border-box;
 }
