@@ -5,19 +5,20 @@
 * Browsers: last 2 version
 */
 
-:root {
-  --b-blue: #33379a;
-  --b-orange: #fa592a;
-  --b-pink: #ec206f;
+/*  --bblue: #33379a;
+  --borange: #fa592a;
+  --bpink: #ec206f;
   --yellow: #f7b846;
   --turq: #83d8bb;
   --white:  #ffffff;
   --pink: #fcbdc7;
+  --lighter pink: #f9e0e4;
   --gold: #e8c17e;
   --green: #7cb842;
+:root {
   --font-weight-700: 700;
   --font-weight-400: 400;
-}
+}*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -53,11 +54,13 @@ p {
   font-size: 20px;
   font-weight: var(--font-weight-700);
   color: #ffffff;
+  background-color: inherit;
 }
 th {
   font-size: 20px;
   font-weight:800;
   color: #ffffff;
+  background-color: inherit;
 }
 td {
   padding-left: 55px;
@@ -65,16 +68,19 @@ td {
   font-size: 18px;
   font-weight: var(--font-weight-700);
   color: #ffffff;
+  background-color: inherit;
 }
 
 a {
   color: #ffffff;
+  background-color: inherit;
   text-decoration: none;
 }
 
 a:visited {
   /* visited link */
   color :#ffffff;
+  background-color: inherit;
 }
 a:hover, a:focus{
   text-decoration: none ;
@@ -88,7 +94,7 @@ a:hover, a:focus{
 a:active {
   /* selected link */
   color:#7cb842;
-
+  background-color: inherit;
 }
 /*button {
   border: none;
@@ -113,7 +119,7 @@ button,
   border: none;
   font-family: inherit;
   background-color:#7cb842;
-  color: var(--white);
+  color: #ffffff;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -196,6 +202,7 @@ button:focus,
 }
 
 .form {
+  color: inherit;
   background: #fcbdc7;
   -webkit-box-shadow: 0 30px 60px 0 #ffffff;
           box-shadow: 0 30px 60px 0 #ffffff;
@@ -207,7 +214,7 @@ button:focus,
   padding-bottom: 5px;
   left: 0;
   right: 0;
-  border-top: 5px solid #fcbdc7;
+  /*border-top: 5px solid #fcbdc7;*/
 /*   z-index: 1; */
   -webkit-animation: bounce 1.5s infinite;
           animation: bounce 1.5s infinite;
@@ -220,7 +227,7 @@ button:focus,
   width: 300px;
 }
 .name {
-  background-color: #ffffff;
+  background-color: #f9e0e4;
   color: white;
 }
 .name:hover {
@@ -232,7 +239,8 @@ button:focus,
 }
 
 .email {
-  background-color: #ffffff;
+  background-color: #f9e0e4;
+  color: #ffffff;
   height: 2em;
 }
 
@@ -246,7 +254,8 @@ button:focus,
 
 
 .message {
-  background-color: #ffffff;
+  background-color: #f9e0e4;
+  color: #ffffff;
   overflow: hidden;
   height: 10rem;
 }
@@ -271,23 +280,33 @@ button:focus,
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: translateY(4px);
-            transform: translateY(4px);
+    -webkit-transform: translateY(2.5%);
+            transform: translateY(2.5%);
   }
   50% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 5px;
+  }
+  100% {
+    -webkit-transform: translateY(2.5%);
+            transform: translateY(2.5%);
   }
 }
 
 @keyframes bounce {
   0% {
-    -webkit-transform: translateY(4px);
-            transform: translateY(4px);
+    -webkit-transform: translateY(2.5%);
+            transform: translateY(2.5%);
   }
   50% {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    padding-bottom: 5px;
+  }
+  100% {
+    -webkit-transform: translateY(2.5%);
+            transform: translateY(2.5%);
   }
 }
 
@@ -303,6 +322,7 @@ button:focus,
  }
 }
 .grid__item {
+  color: #ffffff;
   background-color:#fcbdc7;
   width: auto;
    min-height: auto;
@@ -332,3 +352,4 @@ button:focus,
     font-size: 22px;
   }
 }
+ 
